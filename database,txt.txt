@@ -1,0 +1,195 @@
+categorys
+	id
+	name 
+	description
+	image 
+	status
+	sort_order
+	date_added
+	date_modified
+	
+sub categorys
+	id
+	name 
+	description
+	image 
+	status
+	sort_order
+	date_added
+	date_modified
+
+products
+	id
+	model
+	sku
+	quantity
+	stock_status_id
+	image
+	manufacturer_id
+	shipping
+	price
+	weight
+	weight_class_id
+	length
+	length_class_id
+	width
+	height
+	status	
+	sort_order
+	date_added
+	date_modified
+	
+manufacturer
+	id
+	name
+	image
+	sort_order
+	date_added
+	date_modified
+
+review
+	id
+	product_id
+	customer_id
+	text
+	rating
+	status
+	date_added
+	date_modified
+
+user	
+	id
+	user_group_id
+	email
+	password
+	firstname
+	lastname
+	email
+	image
+	status
+	date_added
+	date_modified
+	
+customer
+	id
+	customer_group_id
+	password
+	firstname
+	lastname
+	email
+	telephone
+	newsletter
+	address_id
+	status
+	date_added
+	date_modified	
+
+customer_group
+	id
+	name
+	approval
+	date_added
+	date_modified
+
+address
+	id
+	customer_id
+	firstname
+	lastname
+	company
+	address_1
+	address_2
+	city_id
+	postcode
+	country_id
+	state_id
+	date_added
+	date_modified	
+
+banner	
+	id
+	name
+	link
+	image
+	status
+	sort_order
+	date_added
+	date_modified
+
+cart
+	id
+	customer_id
+	product_id
+	quantity
+	date_added
+	date_modified
+
+order
+	id
+	customer_id
+	customer_group_id
+	product_id
+	billing_address_id
+	shipping_address_id
+	payment
+	comment
+	total
+	coupon_id
+	status
+	date_added
+	date_modified
+
+coupon
+	id
+	name
+	code
+	type
+	discount
+	product_id
+	min_order_total
+	max_discount
+	date_start
+	date_end
+	uses_total
+	status
+	date_added
+	date_modified
+	date_modified
+
+discount
+	id
+	product_id
+	customer_group_id
+	quantity
+	price
+	date_start
+	date_end
+
+wishlist
+	id
+	customer_id
+	product_id
+	date_added
+
+country
+	id
+	sortname
+	name
+	phone_code
+
+state
+	id
+	country_id
+	name
+	
+city
+	id
+	state_id
+	name
+
+
+
+auth: {
+  user: 'ecomtest145@gmail.com',
+  pass: 'MOSTWANTED'
+}
